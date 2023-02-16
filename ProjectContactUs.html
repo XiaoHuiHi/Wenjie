@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contact Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea, input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+  color:black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+span {
+    float: right;
+}
+.shopping-cart {
+    display: inline-block;
+    background: url(cart.png) no-repeat 0 0;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+</style>
+</head>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="#" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="ProjectAboutUs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About us</a>
+    <a href="ProjectContactUs.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact us</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="product">Product <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<a href="allproductIn.html" class="w3-bar-item w3-button">All Product</a>
+        <a href="topIn.html" class="w3-bar-item w3-button">RPG</a>
+        <a href="bottomIn.html" class="w3-bar-item w3-button">Online</a>
+        <a href="bagIn.html" class="w3-bar-item w3-button">Graphic</a>
+		<a href="accessoriesIn.html" class="w3-bar-item w3-button">MOBA</a>
+		<a href="setIn.html" class="w3-bar-item w3-button">Set</a>
+      </div>
+    </div>
+	<a href="Sign in.html" class="w3-padding-large w3-hover-white w3-hide-small w3-right" style="text-decoration:none;">Sign In</a>
+    <a href="Sign-in.html" class="w3-padding-large w3-hover-white w3-hide-small w3-right"><i class="fa fa-shopping-cart"></i></a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <img src="image/gg.png" style="width:80%">
+	  	  <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+		<div class="w3-col m6 w3-large w3-margin-bottom">
+		<br>
+		<p>GG.com</p>
+        <i class="fa fa-map-marker" style="width:30px"></i> Malaysia<br>
+        <i class="fa fa-phone" style="width:30px"></i> 0183560621<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> chongwenjie848@gmail.com<br>
+      </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+	<div style="text-align:center">
+	<br>
+    <h2>Contact Us</h2>
+    <p>Stop by and say "HI". Or drop us a comment </p>
+	</div>
+      <form action="/action_page.php" method="post">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First name...">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+		<label for="email">Your E-mail</label>
+		<input type="email" id="email" name="custemail" placeholder="Your Email...">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+		  <option value="malaysia">Malaysia</option>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+		  <option value="japan">Japan</option>
+		  <option value="korea">Korea</option>
+		  <option value="china">China</option>
+		  
+        </select>
+        <label for="comment">Let us know your thoughts.</label>
+        <textarea id="comment" name="comment" placeholder="Something to tell..." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+
+        </div>
+    </div>
+		</div>
+		
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+</footer>    
+</body>
+</html>

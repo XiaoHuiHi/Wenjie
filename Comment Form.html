@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Customer Comment Form</title>
+<script>
+function display() {
+alert ("Thank you for your response. You may leave this page right now! Have a nice day!");
+}
+</script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >    
+        <link rel="stylesheet" href="stylesheet/form.css" >
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;}
+.mySlides {display: none;}
+
+</style>
+
+    </head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <body>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href=" " onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="landing page.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="ProjectAboutUsOut.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About us</a>
+    <a href="ProjectContactUsOut.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact us</a>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="product">Product <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+		<a href="allproduct.html" class="w3-bar-item w3-button">All Product</a>
+        <a href="top.html" class="w3-bar-item w3-button">Top</a>
+        <a href="bottom.html" class="w3-bar-item w3-button">Bottom</a>
+        <a href="bag.html" class="w3-bar-item w3-button">Bag</a>
+		<a href="accessories.html" class="w3-bar-item w3-button">Accessories</a>
+		<a href="set.html" class="w3-bar-item w3-button">Set</a>
+      </div>
+    </div>
+	<a href="index.html" class="w3-padding-large w3-hover-white w3-hide-small w3-right" style="text-decoration:none;">Sign Out</a>
+  </div>
+</div>
+        <div class="container">
+            <div class="imagebg"></div>
+            <div class="row " style="margin-top: 50px">
+                <div class="col-md-6 col-md-offset-3 form-container">
+                    <br><h2>Customer's Comment Form</h2> 
+                    <p> Please provide your feedback below: </p>
+                    <form role="form" method="post">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label>How do you rate our services?</label>
+                                <p>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="bad" >
+                                        Bad 
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="average" >
+                                        Average 
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="experience" id="radio_experience" value="good" >
+                                        Good 
+                                    </label>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="comments"> Comments:</label>
+                                <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="name"> Your Name:</label>
+                                <input type="text" class="form-control" id="name" name="name" >
+                            </div>
+                            <div class="col-sm-6 form-group">
+                                <label for="email"> Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" >
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <a href="landing page.html" target="_blank" style="text-decoration:none;"><button type="submit" class="btn btn-lg btn-warning btn-block" onclick="display()">Post </button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://www.pinterest.com/" target="_blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/home" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+</footer> 
+
+    </body>
+</html>
