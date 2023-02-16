@@ -7,7 +7,7 @@
     {
         $email = mysqli_real_escape_string($conn,$_POST["email"]);
 
-        if(mysqli_num_rows(mysqli_query($conn,"SELECT * FROM user WHERE email = '{$email}'"))>0)
+        if(mysqli_num_rows(mysqli_query($conn,"SELECT * FROM user WHERE Email = '{$email}'"))>0)
         {
             header("Location: Reset_pass.php?email=".$email);
         }
@@ -28,9 +28,13 @@
 <body>
 
 <div class="forgotpassword-form">
+<?php 
+    echo $msg;
+?>
 <img src="image/signup.png">
+
 <h1> Forgot password</h1>
-<form>
+<form method="POST">
 <input type="email" name="email" class="input-box" placeholder="please type your email">
 
 <button type="button" name="submit" class="signup-btn">Submit</button>

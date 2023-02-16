@@ -42,7 +42,7 @@
 <input type="password" name="pass" class="input-box" placeholder="Your password">
 <p><span><input type="checkbox"</span>I agree to the Terms of serivces</p>
 <a href="landing page.html" style="text-decoration:none; color:white;"><button type="submit" name="submit" class="signup-btn">sign in</button></a>
-<p><a href="forgot password.html">Forgot password?</p>  <a  href="sign up.html">Sign up now</a>
+<p><a href="forgot.php">Forgot password?</p>  <a  href="sign up.html">Sign up now</a>
 
 
 </form>
